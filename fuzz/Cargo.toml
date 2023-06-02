@@ -17,3 +17,7 @@ members = ["."]
 [[bin]]
 name = "exec_cmd"
 path = "fuzz_targets/exec_cmd.rs"
+
+[[bin]]
+name = "select"
+path = "fuzz_targets/select.rs"
