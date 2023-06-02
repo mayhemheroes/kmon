@@ -9,7 +9,7 @@ use kmon::kernel::log::KernelLogs;
 // libFuzzer entry point
 fuzz_target!(|data: &[u8]| {
     // Create a mutable instance of KernelLogs
-    let mut kernel_logs = KernelLogs::new(); // Replace `new` with your constructor if available
+    let mut kernel_logs = KernelLogs::update(); // Replace `new` with your constructor if available
 
     // Use the input data to set the area_height and area_sub variables
     let area_height = u16::from_le_bytes([data[0], data[1]]);
