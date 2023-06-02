@@ -61,6 +61,7 @@ jobs:
         mayhemfile:
           - mayhem/Mayhemfile
           - mayhem/get.Mayhemfile
+          - mayhem/is_module_filename.Mayhemfile
 
     steps:
       - uses: actions/checkout@v3

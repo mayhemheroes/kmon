@@ -1,0 +1,5 @@
+project: kmon
+taris_module_filename: is_module_filename
+
+cmds:
+  - cmd: /is_module_filename

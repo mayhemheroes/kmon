@@ -21,3 +21,7 @@ path = "fuzz_targets/exec_cmd.rs"
 [[bin]]
 name = "get"
 path = "fuzz_targets/get.rs"
+
+[[bin]]
+name = "is_module_filename"
+path = "fuzz_targets/is_module_filename.rs"
