@@ -11,9 +11,8 @@ use std::process::Command;
 // libFuzzer entry point
 fuzz_target!(|data: &[u8]| {
     // Use the input data to construct a command and command arguments
-    let cmd = String::from_utf8_lossy(data).to_string();
-    let cmd_args: Vec<&str> = vec![];
-
-    // Call the exec_cmd function with the constructed command and command arguments
-    let _ = exec_cmd(&cmd, &cmd_args);
+    if let Ok(cmd) = std::str::from_utf8(data) {
+        let cmd_args: Vec<&str> = vec![];
+        let _ = exec_cmd(&cmd, &cmd_args);
+    }
 });
