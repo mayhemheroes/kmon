@@ -1,5 +1,0 @@
-project: kmon
-target: select
-
-cmds:
-  - cmd: /select

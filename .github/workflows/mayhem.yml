@@ -60,7 +60,7 @@ jobs:
       matrix:
         mayhemfile:
           - mayhem/Mayhemfile
-          - mayhem/select.Mayhemfile
+          - mayhem/get.Mayhemfile
 
     steps:
       - uses: actions/checkout@v3
