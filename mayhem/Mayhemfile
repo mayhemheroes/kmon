@@ -1,0 +1,5 @@
+project: kmon
+target: exec_cmd
+
+cmds:
+  - cmd: /exec_cmd
