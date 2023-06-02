@@ -17,3 +17,4 @@ FROM ubuntu:20.04
 
 COPY --from=builder kmon/fuzz/target/x86_64-unknown-linux-gnu/release/exec_cmd /
 COPY --from=builder kmon/fuzz/target/x86_64-unknown-linux-gnu/release/get /
+COPY --from=builder kmon/fuzz/target/x86_64-unknown-linux-gnu/release/is_module_filename /
