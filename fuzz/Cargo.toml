@@ -1,0 +1,27 @@
+[package]
+name = "kmon-fuzz"
+version = "0.0.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+kmon = { path = ".." }
+libfuzzer-sys = { version = "0.4", features = ["arbitrary-derive"] }
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "exec_cmd"
+path = "fuzz_targets/exec_cmd.rs"
+
+[[bin]]
+name = "get"
+path = "fuzz_targets/get.rs"
+
+[[bin]]
+name = "is_module_filename"
+path = "fuzz_targets/is_module_filename.rs"

@@ -1,0 +1,5 @@
+project: kmon
+target: is_module_filename
+
+cmds:
+  - cmd: /is_module_filename
